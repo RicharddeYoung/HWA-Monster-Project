@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HWA - Monster Maker</title>
+        <link rel="stylesheet" href="./indexstyle.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="headerDiv">
+            HWA - Monster Maker:<br> Database Access Portal
+        </div>
+        <div id="inputDiv">
+            <form method="post" action="http://localhost:8080/monstermaker/create">
+                <fieldset>
+                    <legend style="text-align:center">Add New Monster</legend>
+                    <div class="inputForm">
+                        <label for="monsterName" class="form-label">Monster Name:</label>
+                        <input type="text" class="form-control" id="monsterName" aria-describedby="monsterNameHelp">
+                    </div>
+                    <div class="inputForm">
+                        <label for="monsterFamily" class="form-label">Monster Family:</label>
+                        <select class="form-select" id="monsterFamily">
+                            <option value="Arthropod">Arthropod</option>
+                            <option value="Cephalopod">Cephalopod</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Amphibian">Amphibian</option>
+                            <option value="Reptile">Reptile</option>
+                            <option value="Mammal">Mammal</option>
+                            <option value="Avian">Avian</option>
+                            <option value="Demon">Demon(Elemental Being)</option>
+                        </select>
+                    </div>
+                    <div class="inputForm">
+                        <label for="monsterDiet" class="form-label">Monster Diet:</label>
+                        <select class="form-select" id="monsterDiet">
+                            <option value="Herbivore">Herbivore - Flora Eater</option>
+                            <option value="Petravore">Petravore - Rock Eater</option>
+                            <option value="Piscivore">Piscivore - Fish Eater</option>
+                            <option value="Insectivore">Insectivore - Insect Eater</option>
+                            <option value="Heamophore">Haemophore - Blood Eater</option>
+                            <option value="Carnivore">Carnivore - Meat Eater</option>
+                            <option value="Omnivore">Omnivore - Eats more than one type of food</option>
+                        </select>
+                    </div>
+                    <div class="inputForm">
+                        <label for="monsterFlight" class="form-label">Does Monster have :</label>
+                        <br/>
+                        <input type="checkbox" class="form-check-input" id="monsterFlight"> Flight Capabilities?
+                        <br/>
+                        <input type="checkbox" class="form-check-input" id="monsterSwim"> Swim Capabilities?
+                    </div>
+                    <div class="inputForm">
+                        <label for="monsterOrigin" class="form-label">Monster Origin:</label>
+                        <input type="text" class="form-control" id="monsterOrigin" placeholder="Country of Origin">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="menuDiv">
+
+        </div>
+
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
