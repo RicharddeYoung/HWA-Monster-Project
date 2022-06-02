@@ -143,5 +143,13 @@ public class MonsterMaker {
 				&& Objects.equals(monsterName, other.monsterName) && Objects.equals(monsterOrigin, other.monsterOrigin)
 				&& monsterSwim == other.monsterSwim;
 	}
+
+//	TO STRING
+	@Override
+	public String toString() {
+		return "MonsterMaker [monsterId=" + monsterId + ", monsterName=" + monsterName + ", monsterFamily="
+				+ monsterFamily + ", monsterDiet=" + monsterDiet + ", monsterFlight=" + monsterFlight + ", monsterSwim="
+				+ monsterSwim + ", monsterOrigin=" + monsterOrigin + "]";
+	}
 	
 }

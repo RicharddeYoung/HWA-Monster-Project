@@ -31,6 +31,7 @@ public class MonsterMakerController {
 //	CREATE
 	@PostMapping("/create")
 	public ResponseEntity<MonsterMaker> create(@RequestBody MonsterMaker monsterMaker) {
+		System.out.println(monsterMaker);
 		return new ResponseEntity<MonsterMaker>(service.create(monsterMaker), HttpStatus.CREATED);
 	}
 	
@@ -71,17 +72,17 @@ public class MonsterMakerController {
 	}
 	
 	@GetMapping("/getByFamilyAndDiet/{monsterFamily}/{monsterDiet}")
-	public ResponseEntity<List<MonsterMaker>> getByFamilyAndDiet(@PathVariable String monsterFamily, String monsterDiet) {
+	public ResponseEntity<List<MonsterMaker>> getByFamilyAndDiet(@PathVariable String monsterFamily, @PathVariable String monsterDiet) {
 		return new ResponseEntity<List<MonsterMaker>>(service.getByFamilyAndDiet(monsterFamily, monsterDiet), HttpStatus.OK);
 	}
 	
 	@GetMapping("/getByFamilyAndOrigin/{monsterFamily}/{monsterOrigin}")
-	public ResponseEntity<List<MonsterMaker>> getByFamilyAndOrigin(@PathVariable String monsterFamily, String monsterOrigin) {
+	public ResponseEntity<List<MonsterMaker>> getByFamilyAndOrigin(@PathVariable String monsterFamily, @PathVariable String monsterOrigin) {
 		return new ResponseEntity<List<MonsterMaker>>(service.getByFamilyAndOrigin(monsterFamily, monsterOrigin), HttpStatus.OK);
 	}
 	
 	@GetMapping("/getByDietAndOrigin/{monsterDiet}/{monsterOrigin}")
-	public ResponseEntity<List<MonsterMaker>> getByDietAndOrigin(@PathVariable String monsterDiet, String monsterOrigin) {
+	public ResponseEntity<List<MonsterMaker>> getByDietAndOrigin(@PathVariable String monsterDiet, @PathVariable String monsterOrigin) {
 		return new ResponseEntity<List<MonsterMaker>>(service.getByDietAndOrigin(monsterDiet, monsterOrigin), HttpStatus.OK);
 	}
 	

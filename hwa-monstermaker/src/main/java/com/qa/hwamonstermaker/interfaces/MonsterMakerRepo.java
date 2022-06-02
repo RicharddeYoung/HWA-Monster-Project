@@ -19,19 +19,19 @@ public interface MonsterMakerRepo extends JpaRepository<MonsterMaker, Long> {
 	List<MonsterMaker> findByMonsterOrigin(String monsterOrigin);
 	
 	
-	@Query(value = "SELECT * FROM monsters WHERE monster_flight = true", nativeQuery=true)
+	@Query(value = "SELECT * FROM monster_maker WHERE monster_flight = true", nativeQuery=true)
 	List<MonsterMaker> findByFlightAbility(boolean monsterFlight);
 	
-	@Query(value = "SELECT * FROM monsters WHERE monster_swim = true", nativeQuery=true)
+	@Query(value = "SELECT * FROM monster_maker WHERE monster_swim = true", nativeQuery=true)
 	List<MonsterMaker> findBySwimAbility(boolean monsterSwim);
 	
-	@Query(value = "SELECT * FROM monsters WHERE monster_family = ?1 AND monster_diet = ?2", nativeQuery=true)
+	@Query(value = "SELECT * FROM monster_maker WHERE monster_family = ?1 AND monster_diet = ?2", nativeQuery=true)
 	List<MonsterMaker> findByFamilyAndDiet(String monsterFamily, String monsterDiet);
 	
-	@Query(value = "SELECT * FROM monsters WHERE monster_family = ?1 AND monster_origin = ?2", nativeQuery=true)
+	@Query(value = "SELECT * FROM monster_maker WHERE monster_family = ?1 AND monster_origin = ?2", nativeQuery=true)
 	List<MonsterMaker> findByFamilyAndOrigin(String monsterFamily, String monsterOrigin);
 	
-	@Query(value = "SELECT * FROM monsters WHERE monster_diet = ?1 AND monster_origin = ?2", nativeQuery=true)
+	@Query(value = "SELECT * FROM monster_maker WHERE monster_diet = ?1 AND monster_origin = ?2", nativeQuery=true)
 	List<MonsterMaker> findByDietAndOrigin(String monsterDiet, String monsterOrigin);
 
 }

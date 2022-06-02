@@ -3,13 +3,13 @@
     text-align:center;
     padding-left:10vw;
     padding-right:10vw;
-    border-color:forestgreen;
+    border-color:sienna;
     border-style:groove;
     border-width:20px;
     font-family:'Courier New', Courier, monospace;
     font-size:20pt;
     font-weight:bolder;
-    background-color:darkolivegreen;
+    background-color:darkseagreen;
     color:maroon;
 }
 
@@ -22,16 +22,52 @@
 
 #inputDiv {
     text-align:left;
-    padding-left:10px;
-    padding-right:10px;
+    padding:10px;
     font-family:'Courier New', Courier, monospace;
-    border-right:20px;
-    border-bottom:20px;
-    border-left:20px;
+    border:20px;
     border-style:groove;
-    border-color:forestgreen;
-    background-color:darkcyan;
+    border-color:sienna;
+    background-color:darkseagreen;
     color:darkred;
     font:bolder;
+    float:left;
     width:20vw;
+    height:100%;
+}
+
+#addButton {
+    text-align:center;
+}
+
+#dataDiv {
+    text-align:center;
+    font:bolder;
+    border-style:groove;
+    border:20px;
+    border-color:lightseagreen;
+    background-color:palegreen;
+    font-family:'Courier New', Courier, monospace;
+    color:darkred;
+    float:center;
+    padding:10px;
+    padding-left:20vw;
+    height:100vw;
+    padding-left:20px;
+}
+
+.tables {
+    border:5px;
+    border-style:groove;
+    border-color:saddlebrown;
+    background-color:darkcyan;
+    font:bolder;
+    width:75vw;
+    float:right;
+    margin-bottom:5px;
+    margin-right:20px;
+}
+
+.btnDiv {
+    margin-top:10px;
+    text-align:right;
 }
