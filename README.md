@@ -20,8 +20,6 @@ This project was written with:
 ## Installation
 
 * **MySQL Workbench**:
-<details>
-  <summary>Click to expand</summary>
   1. Click [here](https://dev.mysql.com/downloads/windows/installer/8.0.html/) to download the installer.
   2. Run the installer.
   3. You should see a pop-up asking to allow the installer to run and make changes to your system. Accept this pop-up.
@@ -64,7 +62,6 @@ This project was written with:
     Click _OK_, then scroll in the bottom panel until you find the _Path_ variable. Select it and click _Edit_, then _New_ and add %MYSQL_HOME%\bin
   ![image](https://user-images.githubusercontent.com/103578351/172067663-64094648-ee35-4f2c-9be6-21ee7e6c2f77.png)
     Click _OK_ recursively until all system windows are closed.
-</details>
 
 
 
