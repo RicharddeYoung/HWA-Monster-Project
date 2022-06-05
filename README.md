@@ -15,6 +15,7 @@ This project was written with:
 * [Visual Studio Code](https://code.visualstudio.com/download) - JavaScript, HTML, CSS etc Development Environment
 * [Maven](https://maven.apache.org/) & [JUnit](https://juit.org/) - Building and executing tests
 * [git Bash](https://git-scm.com/) - Terminal for running programme once built
+* [GitHub](https://github.com/) - Repository
 
 
 ## Installation
@@ -63,13 +64,66 @@ This project was written with:
   ![image](https://user-images.githubusercontent.com/103578351/172067663-64094648-ee35-4f2c-9be6-21ee7e6c2f77.png)
     Click _OK_ recursively until all system windows are closed.
 
+* **Java**:
+  1. Download the latest stable version of Java [here](https://www.oracle.com/java/technologies/javase/jdk14-archive-downloads.html).
+  2. Double click the executable "jdk-14.0.1_window-x64_bin.exe"/"jdk-8u221-windows-x64.exe". The following window will appear. Click **Next"".
+  ![image](https://user-images.githubusercontent.com/103578351/172070129-d148a981-e00a-477a-855e-1e1d2bfcc5db.png)
+  3. Then click **Next** again.
+  ![image](https://user-images.githubusercontent.com/103578351/172070434-3e4d6126-832d-4613-9c59-c30b7e23b4d9.png)
+  4. Click **Next** again.
+  ![image](https://user-images.githubusercontent.com/103578351/172070531-78dc2038-73c0-46b5-9607-a645d8cb6120.png)
+  5. Click **Close**.
+  ![image](https://user-images.githubusercontent.com/103578351/172070668-9190465b-4efe-4f82-b1bb-c719278835cf.png)
+  6. The JDK will now be installed in C://Program Files/Java
+  7. Next we need to set the environment variables for the JDK. Search in the Start Menu for 'env' and click the option to _edit system environment variables_.
+  ![image](https://user-images.githubusercontent.com/103578351/172071128-ea95d06d-a6d9-4dac-a9cb-ce81fde7b1d8.png)
+  8. Click _Environment Variables_. This should open another window.
+  ![image](https://user-images.githubusercontent.com/103578351/172071472-5bd84c45-c9f1-493a-be1e-4f96300fae23.png)
+  9. In the bottom _System variables_ window, select **New**.
+  ![image](https://user-images.githubusercontent.com/103578351/172071601-89f380e4-5f3d-42d1-b866-133e6ea774fb.png)
+  10. In the pop-up window, create the JAVA_HOME cariable and give it a value corresponding to the JDK folder.
+  ![image](https://user-images.githubusercontent.com/103578351/172071637-c8ca107b-5b1c-4ac1-9854-396425048e26.png)
+  11. Click **OK**.
+  ![image](https://user-images.githubusercontent.com/103578351/172071649-87df771d-3e26-4009-89cb-6e142848bcd6.png)
+  12. Next, edit the **Path** variable to include a reference to the /bin (binary files) folder in JAVA_HOME by selecting the **Path** variable under _System variables_ and click **Edit...**
+  ![image](https://user-images.githubusercontent.com/103578351/172072141-cf8904d9-efaf-4666-93b1-33c6e415ec07.png)
+  13. The path of the Java /bin folder needs to be appended, referencing the JAVA_HOME variable: %JAVA_HOME%\bin
+  14. Once complete, the **Path** variable should resemble the image below (note the semi-colon after %JAVA_HOME%\bin).
+  ![image](https://user-images.githubusercontent.com/103578351/172072479-3b53df87-f099-4162-b5fe-bc6652f69387.png)
+  15. Test this by opening **command prompt**, type **java** and hit enter.
+      If the OS runs, the file called Java.exe should show the following output:
+  ![image](https://user-images.githubusercontent.com/103578351/172072634-a0e64c4f-6cab-4b8c-b0ef-5110c444bda8.png)
+  16. It's possible to check which Java version is on your system by typing "java -version" into your **command prompt**.
 
+* **Maven**:
+  1. Navigate to the _Environment Variables_ menu.
+  2. Set two variables; _M2_HOME_ and _MAVEN_HOME_ - both of which should point to the path of your Maven install folder.
+  3. The _Path_ variable must be edited in the same way as JAVA_HOME (above).
 
+* **JUnit**:
+  1. Add the following dependency to the Maven project's _pom.xml_:
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+* **GitHub**:
+  1. Visit [GitHub.com](https://github.com/).
+  2. Enter your email address into the box on the landing-page and hit the **Sign up for GitHub** button.
+  3. On the next page, hit the **Continue** button.
+  4. Create a password for your account and hit the **Continue** button
+  5. Enter your desired username for your GitHub account and hit the **Continue** button.
+  6. Decide if you want to receive product updates and hit the **Continue** button.
+  7. Solve the _captcha_ and hit the **Create account** button.
+  8. Once you've completed that, you will receive a confirmation code in your email inbox which you can use to activate your account.
+  9. GitHub account created.
 
 
 ## Building
 
-In order to build a working version of this programme, you must first enter the repository folder downloaded from GitHub (above) and moved into the target folder. From there, open git Bash into the folder and type `mvn clean package`. Once that is complete, type `java -jar hwamonstermaker-0.0.1-SNAPSHOT-jar-with-dependencies.jar`.
+In order to build a new working version of this programme, you must first enter the repository folder downloaded from GitHub (above) and moved into the target folder. From there, open git Bash into the folder and type `mvn clean package`. Once that is complete, type `java -jar hwamonstermaker-0.0.1-SNAPSHOT.jar`.
 
 
 ## Running the tests
