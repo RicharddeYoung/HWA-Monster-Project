@@ -4,7 +4,7 @@ A Hobby Web Application that enables a user to create, read, update and delete e
 
 ## Getting Started
 
-This application can be found in the repository on GitHub - https://github.com/RicharddeYoung/IMS-Starter-Project.git
+This application can be found in the repository on GitHub - https://github.com/RicharddeYoung/HWA-Monster-Project.git
 
 ### Prerequisites
 
@@ -19,7 +19,9 @@ This project was written with:
 
 ## Installation
 
-
+* MySQL Workbench:
+  1. [Download the installer](https://dev.mysql.com/downloads/windows/installer/8.0.html/).
+  2. 
 
 
 ## Building
