@@ -21,8 +21,8 @@ This project was written with:
 
 * **MySQL Workbench**:
 <details>
-  <summary>* **MySQL Workbench**</summary>
-  1. [Download the installer](https://dev.mysql.com/downloads/windows/installer/8.0.html/).
+  <summary>Click to expand</summary>
+  1. Click [here](https://dev.mysql.com/downloads/windows/installer/8.0.html/) to download the installer.
   2. Run the installer.
   3. You should see a pop-up asking to allow the installer to run and make changes to your system. Accept this pop-up.
   4. Once the installer is running, a screen should appear asking you to hoose a **Setup Type**; choose **Custom** and click **Next**.
