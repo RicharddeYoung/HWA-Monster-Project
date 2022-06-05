@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qa</groupId>
-	<artifactId>AprEnable2</artifactId>
+	<artifactId>hwamonstermaker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>new-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>monstermaker</name>
+	<description>Monster Maker</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -55,11 +55,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-		    <groupId>io.springfox</groupId>
-		    <artifactId>springfox-boot-starter</artifactId>
-		    <version>3.0.0</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -68,7 +63,30 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-assembly-plugin</artifactId>
+			    <executions>
+			        <execution>
+			        <phase>package</phase>
+			        <goals>
+			            <goal>single</goal>
+			        </goals>
+			        <configuration>
+			            <archive>
+			                <manifest>
+			                    <mainClass>
+			                    com.qa.hwamonstermaker.HwaMonstermakerApplication
+			                    </mainClass>
+			                </manifest>
+			            </archive>
+			            <descriptorRefs>
+			                <descriptorRef>jar-with-dependencies</descriptorRef>
+			            </descriptorRefs>
+			        </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
 		</plugins>
 	</build>
-
 </project>
