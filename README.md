@@ -163,7 +163,7 @@ In order to build a new working version of this programme, you must first enter 
 
 ## Running the tests
 
-Once you have the code open within your preffered IDE, you need to select the top level of the src/test/java and launch as Unit Test to begin testing.
+Once you have the code open within your preffered IDE, you need to select the top level of the src/test/java and launch as JUnit Test to begin testing.
 ![image](https://user-images.githubusercontent.com/103578351/172025693-d46b387b-881d-4b6d-8625-75b86923e45b.png)
 
 
@@ -173,14 +173,23 @@ Once you have the code open within your preffered IDE, you need to select the to
 The unit tests are designed to test the core files of the programme, as well as the most basic methods for each class. This includes the CRUD and Controller tests. The tests are run with set results expected and are only able to pass when the test return matches the expected results for each test.
 In this case, we are testing the create, read, update and delete functions of the application, with several different variations on the read method to cover different search criteria, including:  
 Read All  
+![image](https://user-images.githubusercontent.com/103578351/172120494-9f27b612-07c2-4e1e-bde2-b144ea7d72be.png)  
 Read By Family  
+![image](https://user-images.githubusercontent.com/103578351/172120548-8e9d8757-171f-49b4-b737-e1f3d11fdc78.png)  
 Read By Diet  
+![image](https://user-images.githubusercontent.com/103578351/172120589-f7824bf6-7459-4f81-93ec-c9b9d7ce4df8.png)  
 Read By Origin  
+![image](https://user-images.githubusercontent.com/103578351/172120628-f1af0e99-01e2-48ec-9c8d-f2661d7a39ee.png)  
 Read By Flight  
+![image](https://user-images.githubusercontent.com/103578351/172120679-8bfdfabc-a037-4bbe-ba18-8760a8e474d1.png)  
 Read By Swim  
+![image](https://user-images.githubusercontent.com/103578351/172120729-1bcc777e-2757-4fc9-b5e0-1da831161598.png)  
 Read By Family and Diet  
+![image](https://user-images.githubusercontent.com/103578351/172120774-c8054c20-9380-4a3d-a880-b6a25ef250f2.png)  
 Read By Family and Origin  
+![image](https://user-images.githubusercontent.com/103578351/172120802-4de0f953-69d0-49a4-80fa-077a0235bcf8.png)  
 Read By Diet and Origin  
+![image](https://user-images.githubusercontent.com/103578351/172120847-fc7fe5f9-62f1-41d0-a4e5-5de916c96345.png)  
 
 
 ## Built With
