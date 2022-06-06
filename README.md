@@ -120,6 +120,41 @@ This project was written with:
   8. Once you've completed that, you will receive a confirmation code in your email inbox which you can use to activate your account.
   9. GitHub account created.
 
+* **Git Bash**:
+  1. Visit the [Git Bash dowload](https://git-scm.com/downloads/) page.
+  2. Select your relevant OS.  
+  ![image](https://user-images.githubusercontent.com/103578351/172117680-e1f53192-43ed-4501-af8c-79fa46f81d58.png)  
+  3. The download should begin automatically.
+  4. Run the installer once it has finished downloading and a window resembling this should open. Click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172117901-3c38b4ed-6aea-4cbd-9a07-8751637b6531.png)  
+  5. Leave the install location as default and click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172118044-e55feaea-9d56-47a0-8399-c2c54e722b3f.png)  
+  6. Select the components shown here and click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172118127-e2c39ce5-7ecf-473f-b894-47e7445352c4.png)  
+  7. The start menu folder should be "Git", then click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172118245-fdff5238-8d1f-4e76-8e70-6e572250d71c.png)  
+  8. Change the default editor to one you are familiar with, such as Notepad.
+  9. Select _Override the defauly branch name for new repositories_ and make sure the name is "**main**", then click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172118541-81d60327-4a63-46e4-9bbc-e1dd66495927.png)  
+  10. Adjust where Git can be run from, selecting _Use Git and optional Unix tolls from the Command Prompt_ allows you to use both **Git Bash** and command prompt for version control, or you can leave it as the default if you'd rather only use **Git Bash**. Then click **Next**.
+  11. Select _Use bundled OpenSSH_ and click **Next**.
+  12. Select _Use the OpenSSL library_ then click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172119126-e88f31cb-34a7-486a-b3f0-3cd3d7f3c65b.png)  
+  13. Select _Checkout Windows-style, commit Unix-style line endings_, then click **Next**.
+  14. Select _Use MinTTY (the default terminal of MSYS2)_ then click **Next**.
+  15. Select _Default (fast-forward or merge)_ then click **Next**.  
+  ![image](https://user-images.githubusercontent.com/103578351/172119496-e52f3a37-645b-407a-9d9c-05f7f646e743.png)  
+  16. Select _Git Credential Manager Core_, then click **Next**.
+  17. Tick _Enable file system caching_ and then click **Next**.
+  18. Tick _Enable experimental built-in file system monitor_ and then click **Next**.
+  19. Let Git install.  
+  ![image](https://user-images.githubusercontent.com/103578351/172119764-e179f8ff-c5ae-4bda-bc5d-5178d16d36c2.png)  
+  20. Launch Git Bash and click _Finish_.  
+  ![image](https://user-images.githubusercontent.com/103578351/172119863-ca07ab44-2585-46cc-99b9-63e3973d486f.png)  
+  21. If a window that looks like this opens, you've successfully installed Git Bash!  
+  ![image](https://user-images.githubusercontent.com/103578351/172120005-4f373324-58b3-4ecc-a260-2706577e0053.png)  
+
+
 
 ## Building
 
@@ -136,15 +171,16 @@ Once you have the code open within your preffered IDE, you need to select the to
 ### Unit Tests 
 
 The unit tests are designed to test the core files of the programme, as well as the most basic methods for each class. This includes the CRUD and Controller tests. The tests are run with set results expected and are only able to pass when the test return matches the expected results for each test.
-In this case, we are testing the create, read, update and delete functions of the application, with several different variations on the read method to cover different search criteria, including:  Read All
-                      Read By Family
-                      Read By Diet
-                      Read By Origin
-                      Read By Flight
-                      Read By Swim
-                      Read By Family and Diet
-                      Read By Family and Origin
-                      Read By Diet and Origin
+In this case, we are testing the create, read, update and delete functions of the application, with several different variations on the read method to cover different search criteria, including:  
+Read All  
+Read By Family  
+Read By Diet  
+Read By Origin  
+Read By Flight  
+Read By Swim  
+Read By Family and Diet  
+Read By Family and Origin  
+Read By Diet and Origin  
 
 
 ## Built With
