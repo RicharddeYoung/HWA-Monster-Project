@@ -69,7 +69,7 @@ let create = () => {
         .catch((err) => {
             console.error(err);
         });
-    
+
 }
 
 let remove = (idVal) => {
@@ -133,10 +133,10 @@ let displayFamilySearchResult = (data) => {
     for (let entry of data) {
         var entrySearchDiv = document.createElement("div");
         entrySearchDiv.setAttribute("class","entrySearchDiv");
-        
+
         let tableSearchDiv = document.createElement("div");
         tableSearchDiv.setAttribute("class","searchTables");
-        
+
         let monHeadSearchDiv = document.createElement("div");
         monHeadSearchDiv.setAttribute("class", "monHeadSearchDiv");
         let nameHeadSearchDiv = document.createElement("div");
@@ -172,7 +172,7 @@ let displayFamilySearchResult = (data) => {
         let originValueSearchDiv = document.createElement("div");
         originValueSearchDiv.setAttribute("class", "originValueSearchDiv");
         let monOrigin = document.createTextNode(`Origin: ${entry.monsterOrigin}`);
-        
+
         nameValueSearchDiv.appendChild(monName);
         monValueSearchDiv.appendChild(nameValueSearchDiv);
         familyValueSearchDiv.appendChild(monFamily);
@@ -194,17 +194,17 @@ let displayFamilySearchResult = (data) => {
         tableSearchDiv.appendChild(monValueSearchDiv);
         tableSearchDiv.appendChild(monHeadSearchDiv);
         entrySearchDiv.appendChild(tableSearchDiv);
-        
+
         let btnSearchDiv = document.createElement("div");
         btnSearchDiv.setAttribute("class","buttonSearchDiv");
-        
+
         let updateSearchBtn = document.createElement("button");
         updateSearchBtn.setAttribute("class","btn btn-warning");
         updateSearchBtn.setAttribute("value",`${entry.monsterId}`);
         updateSearchBtn.setAttribute("data-bs-toggle","modal");
         updateSearchBtn.setAttribute("data-bs-target","#monsterUpdateModal");
         updateSearchBtn.innerHTML="Update Entry";
-        
+
         let deleteSearchBtn = document.createElement("button");
         deleteSearchBtn.setAttribute("class","btn btn-danger");
         deleteSearchBtn.setAttribute("value",`${entry.monsterId}`);
@@ -238,10 +238,10 @@ let displayDietSearchResult = (data) => {
     for (let entry of data) {
         var entrySearchDiv = document.createElement("div");
         entrySearchDiv.setAttribute("class","entrySearchDiv");
-        
+
         let tableSearchDiv = document.createElement("div");
         tableSearchDiv.setAttribute("class","searchTables");
-        
+
         let monHeadSearchDiv = document.createElement("div");
         monHeadSearchDiv.setAttribute("class", "monHeadSearchDiv");
         let nameHeadSearchDiv = document.createElement("div");
@@ -277,7 +277,7 @@ let displayDietSearchResult = (data) => {
         let originValueSearchDiv = document.createElement("div");
         originValueSearchDiv.setAttribute("class", "originValueSearchDiv");
         let monOrigin = document.createTextNode(`Origin: ${entry.monsterOrigin}`);
-        
+
         nameValueSearchDiv.appendChild(monName);
         monValueSearchDiv.appendChild(nameValueSearchDiv);
         familyValueSearchDiv.appendChild(monFamily);
@@ -299,17 +299,17 @@ let displayDietSearchResult = (data) => {
         tableSearchDiv.appendChild(monValueSearchDiv);
         tableSearchDiv.appendChild(monHeadSearchDiv);
         entrySearchDiv.appendChild(tableSearchDiv);
-        
+
         let btnSearchDiv = document.createElement("div");
         btnSearchDiv.setAttribute("class","buttonSearchDiv");
-        
+
         let updateSearchBtn = document.createElement("button");
         updateSearchBtn.setAttribute("class","btn btn-warning");
         updateSearchBtn.setAttribute("value",`${entry.monsterId}`);
         updateSearchBtn.setAttribute("data-bs-toggle","modal");
         updateSearchBtn.setAttribute("data-bs-target","#monsterUpdateModal");
         updateSearchBtn.innerHTML="Update Entry";
-        
+
         let deleteSearchBtn = document.createElement("button");
         deleteSearchBtn.setAttribute("class","btn btn-danger");
         deleteSearchBtn.setAttribute("value",`${entry.monsterId}`);
@@ -334,10 +334,10 @@ let displayResult = (data) => {
         let entryDiv = document.createElement("div");
         entryDiv.setAttribute("class","entryDiv");
         dataDiv.appendChild(entryDiv);
-        
+
         let tableDiv = document.createElement("div");
         tableDiv.setAttribute("class","tables");
-        
+
         let monHeadDiv = document.createElement("div");
         monHeadDiv.setAttribute("class", "monHeadDiv");
         let nameHeadDiv = document.createElement("div");
@@ -373,7 +373,7 @@ let displayResult = (data) => {
         let originValueDiv = document.createElement("div");
         originValueDiv.setAttribute("class", "originValueDiv");
         let monOrigin = document.createTextNode(`Origin: ${entry.monsterOrigin}`);
-        
+
         nameValueDiv.appendChild(monName);
         monValueDiv.appendChild(nameValueDiv);
         familyValueDiv.appendChild(monFamily);
@@ -395,17 +395,17 @@ let displayResult = (data) => {
         tableDiv.appendChild(monValueDiv);
         tableDiv.appendChild(monHeadDiv);
         entryDiv.appendChild(tableDiv);
-        
+
         let btnDiv = document.createElement("div");
         btnDiv.setAttribute("class","buttonDiv");
-        
+
         let updateBtn = document.createElement("button");
         updateBtn.setAttribute("class","btn btn-warning");
         updateBtn.setAttribute("value",`${entry.monsterId}`);
         updateBtn.setAttribute("data-bs-toggle","modal");
         updateBtn.setAttribute("data-bs-target","#monsterUpdateModal");
         updateBtn.innerHTML="Update Entry";
-        
+
         let deleteBtn = document.createElement("button");
         deleteBtn.setAttribute("class","btn btn-danger");
         deleteBtn.setAttribute("value",`${entry.monsterId}`);
@@ -425,4 +425,3 @@ addMonsterButton.addEventListener("click", create);
 searchFamilyButton.addEventListener("click", searchByFamily);
 searchDietButton.addEventListener("click", searchByDiet);
 updateMonsterButton.addEventListener("click", update);
-
